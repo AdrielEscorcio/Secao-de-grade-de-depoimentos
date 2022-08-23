@@ -1,0 +1,136 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face {
+  font-family: "Barlow Semi Condensed Regular";
+  src: url(../font/BarlowSemiCondensed-Regular.ttf);
+}
+
+
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--Light-gray);
+  font-size: 0.82rem;
+  color: var(--Light-grayish-blue);
+  font-family: "Barlow Semi Condensed Regular";
+}
+
+.conteiner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+}
+
+section {
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 14px -3px rgba(0,0,0,0.72);
+  position: relative;
+}
+
+section img {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 32px;
+
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil div {
+  margin-left: 20px;
+}
+
+section h3 {
+  font-weight: 500;
+}
+
+section span {
+  opacity: 0.5;
+}
+
+section h2 {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+section p {
+  opacity: 0.7;
+  margin-top: 30px;
+  line-height: 20px;
+}
+
+.primeiro {
+  grid-column: 1 / 3;
+  background-color: var(--Moderate-violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 10px right 90px ;
+}
+
+.primeiro:hover {
+  left: -20px;
+}
+
+.segundo {
+  background-color: var(--Very-dark-grayish-blue);
+}
+
+.segundo:hover {
+  top: -20px;
+}
+
+.terceiro {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: var(--White);
+  color: var(--Very-dark-blackish-blue);
+}
+
+.terceiro:hover {
+  left: -20px;
+}
+
+.quarto {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  background-color: var(--Very-dark-blackish-blue);
+}
+
+.quarto:hover {
+  bottom: -20px;
+}
+
+.quinto {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+  background-color: var(--White);
+  color: var(--Very-dark-blackish-blue);
+}
+
+.quinto:hover {
+  right: -20px;
+}
